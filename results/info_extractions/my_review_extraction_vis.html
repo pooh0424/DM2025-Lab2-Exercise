@@ -1,0 +1,223 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**\n&quot;&quot;&quot;\nSon of the Soil review – <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">bone-crunching Lagos revenge thriller with bruising 
+swagger</span> 
+Razaaq Adoti writes and stars in this <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">scrappy gangland action romp</span>, <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">mixing 
+Nollywood energy with bloody set pieces and a dash of 80s-style grit</span> 
+Phil Hoad 
+Mon 1 Dec 2025 11.00 GMT 
+Share 
+You have to respect an action film that has its protagonist stagger out of the 
+intensive-care ward into an open-air street market in a backless hospital gown, 
+his tackle whacking conspicuously against the fabric. Star Razaaq Adoti can’t 
+blame his agent, as it was the actor himself who scripted this Nigeria-set revenge 
+thriller, in which his former special forces soldier makes a Jack Carter-like return 
+to wreak havoc on the mean streets of Lagos. 
+Zion (Adoti) has made the US his home after being dishonourably discharged and 
+doing a stretch in the slammer. But he makes a beeline for Lagos when he 
+receives an SOS message from his sister Ronke (Sharon Rotimi), a hotel 
+chambermaid who stumbles on respectable medical professional cum evil drug 
+kingpin Dr Baptiste (Philip Asaya) as he murders a sex worker. Zion is too late: 
+Ronke is a goner, framed as another victim of the fentanyl cocktail Matrix that’s 
+doing the rounds, courtesy of the bad doctor. Time for Zion to dust off his 
+particular set of skills. 
+These turn out in large part to be him walking obliviously into ill-advised locales 
+and getting an absolute beating. But despite Zion’s boneheaded brand of 
+heroism, a lot of plot-facilitating character choices and outbreaks of ripe 
+Nollywood acting, British-Chinese director Chee Keong Cheung delivers <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">a pretty 
+satisfying and fleet-footed ride</span> here. All the more so for <span class="lx-highlight" data-idx="4" style="background-color:#D2E3FC;">going fairly skimpy on the 
+characterisation in the manner of 80s action flicks</span>: Zion gets a cute street urchin 
+sidekick (Ijelu Folajimi), just so we know he’s on the side of the angels. 
+Even Zion’s <span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">inexplicably haphazard street smarts</span> line up somehow with the 
+shambolic, brutal world he infiltrates: <span class="lx-highlight" data-idx="6" style="background-color:#D2E3FC;">an impressive selection of immolations</span>,\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nbludgeonings and machete-gougings is meted out once he teams up with albino 
+ganglord Jagunlabi (Damilola Ogunsi). <span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;">Cheung’s direction matches it with gusto</span>, 
+<span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">recalling City of God in a colourful handheld blitz</span> – though <span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">his fondness for the 
+Dutch angle gets a bit annoying</span>. He uses it so often they’ll have to rename it the 
+Nigerian angle, but <span class="lx-highlight" data-idx="10" style="background-color:#D2E3FC;">his film has got an undeniable gangsta lean</span>. 
+Son of the Soil is in UK cinemas from 5 December.\n&quot;&quot;&quot;\n\n
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="10" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/11</span> |
+          Pos <span id="posInfo">[42-102]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "bone-crunching Lagos revenge thriller with bruising swagger", "color": "#D2E3FC", "startPos": 42, "endPos": 102, "beforeText": "**Page 1**\\n&quot;&quot;&quot;\\nSon of the Soil review \u2013 ", "extractionText": "bone-crunching Lagos revenge thriller with bruising \nswagger", "afterText": " \nRazaaq Adoti writes and stars in this scrappy gangland action romp, mixing \nNollywood energy with bloody set pieces and a dash of 80s-style grit \nPh", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Son of the Soil</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">bone-crunching and bruising swagger</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "scrappy gangland action romp", "color": "#D2E3FC", "startPos": 142, "endPos": 170, "beforeText": "**Page 1**\\n&quot;&quot;&quot;\\nSon of the Soil review \u2013 bone-crunching Lagos revenge thriller with bruising \nswagger \nRazaaq Adoti writes and stars in this ", "extractionText": "scrappy gangland action romp", "afterText": ", mixing \nNollywood energy with bloody set pieces and a dash of 80s-style grit \nPhil Hoad \nMon 1 Dec 2025 11.00 GMT \nShare \nYou have to respect an act", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Son of the Soil</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">scrappy gangland action romp</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "mixing Nollywood energy with bloody set pieces and a dash of 80s-style grit", "color": "#D2E3FC", "startPos": 172, "endPos": 248, "beforeText": "f the Soil review \u2013 bone-crunching Lagos revenge thriller with bruising \nswagger \nRazaaq Adoti writes and stars in this scrappy gangland action romp, ", "extractionText": "mixing \nNollywood energy with bloody set pieces and a dash of 80s-style grit", "afterText": " \nPhil Hoad \nMon 1 Dec 2025 11.00 GMT \nShare \nYou have to respect an action film that has its protagonist stagger out of the \nintensive-care ward into", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Son of the Soil</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">mixing Nollywood energy with bloody set pieces and a dash of 80s-style grit</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "a pretty satisfying and fleet-footed ride", "color": "#D2E3FC", "startPos": 1626, "endPos": 1668, "beforeText": "f \nheroism, a lot of plot-facilitating character choices and outbreaks of ripe \nNollywood acting, British-Chinese director Chee Keong Cheung delivers ", "extractionText": "a pretty \nsatisfying and fleet-footed ride", "afterText": " here. All the more so for going fairly skimpy on the \ncharacterisation in the manner of 80s action flicks: Zion gets a cute street urchin \nsidekick (", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Son of the Soil</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">satisfying and fleet-footed</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "going fairly skimpy on the characterisation in the manner of 80s action flicks", "color": "#D2E3FC", "startPos": 1695, "endPos": 1774, "beforeText": "s of ripe \nNollywood acting, British-Chinese director Chee Keong Cheung delivers a pretty \nsatisfying and fleet-footed ride here. All the more so for ", "extractionText": "going fairly skimpy on the \ncharacterisation in the manner of 80s action flicks", "afterText": ": Zion gets a cute street urchin \nsidekick (Ijelu Folajimi), just so we know he\u2019s on the side of the angels. \nEven Zion\u2019s inexplicably haphazard stree", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Characterisation</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fairly skimpy</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "inexplicably haphazard street smarts", "color": "#D2E3FC", "startPos": 1896, "endPos": 1932, "beforeText": " manner of 80s action flicks: Zion gets a cute street urchin \nsidekick (Ijelu Folajimi), just so we know he\u2019s on the side of the angels. \nEven Zion\u2019s ", "extractionText": "inexplicably haphazard street smarts", "afterText": " line up somehow with the \nshambolic, brutal world he infiltrates: an impressive selection of immolations,\\n&quot;&quot;&quot;\\n\\n**Page 2**\\n&quot;&quot;&quot;\\nbludgeonings and m", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Zion&#x27;s street smarts</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">inexplicably haphazard</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "an impressive selection of immolations, bludgeonings and machete-gougings", "color": "#D2E3FC", "startPos": 1999, "endPos": 2037, "beforeText": "w he\u2019s on the side of the angels. \nEven Zion\u2019s inexplicably haphazard street smarts line up somehow with the \nshambolic, brutal world he infiltrates: ", "extractionText": "an impressive selection of immolations", "afterText": ",\\n&quot;&quot;&quot;\\n\\n**Page 2**\\n&quot;&quot;&quot;\\nbludgeonings and machete-gougings is meted out once he teams up with albino \nganglord Jagunlabi (Damilola Ogunsi). Cheung\u2019s", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Violence</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">impressive selection</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "Cheung\u2019s direction matches it with gusto", "color": "#D2E3FC", "startPos": 2179, "endPos": 2219, "beforeText": "olations,\\n&quot;&quot;&quot;\\n\\n**Page 2**\\n&quot;&quot;&quot;\\nbludgeonings and machete-gougings is meted out once he teams up with albino \nganglord Jagunlabi (Damilola Ogunsi). ", "extractionText": "Cheung\u2019s direction matches it with gusto", "afterText": ", \nrecalling City of God in a colourful handheld blitz \u2013 though his fondness for the \nDutch angle gets a bit annoying. He uses it so often they\u2019ll hav", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Cheung&#x27;s direction</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">matches it with gusto</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "recalling City of God in a colourful handheld blitz", "color": "#D2E3FC", "startPos": 2222, "endPos": 2273, "beforeText": "ings and machete-gougings is meted out once he teams up with albino \nganglord Jagunlabi (Damilola Ogunsi). Cheung\u2019s direction matches it with gusto, \n", "extractionText": "recalling City of God in a colourful handheld blitz", "afterText": " \u2013 though his fondness for the \nDutch angle gets a bit annoying. He uses it so often they\u2019ll have to rename it the \nNigerian angle, but his film has g", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Cheung&#x27;s direction</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">colourful handheld blitz</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "his fondness for the Dutch angle gets a bit annoying", "color": "#D2E3FC", "startPos": 2283, "endPos": 2336, "beforeText": "albino \nganglord Jagunlabi (Damilola Ogunsi). Cheung\u2019s direction matches it with gusto, \nrecalling City of God in a colourful handheld blitz \u2013 though ", "extractionText": "his fondness for the \nDutch angle gets a bit annoying", "afterText": ". He uses it so often they\u2019ll have to rename it the \nNigerian angle, but his film has got an undeniable gangsta lean. \nSon of the Soil is in UK cinema", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Dutch angle</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">gets a bit annoying</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "his film has got an undeniable gangsta lean", "color": "#D2E3FC", "startPos": 2409, "endPos": 2452, "beforeText": "handheld blitz \u2013 though his fondness for the \nDutch angle gets a bit annoying. He uses it so often they\u2019ll have to rename it the \nNigerian angle, but ", "extractionText": "his film has got an undeniable gangsta lean", "afterText": ". \nSon of the Soil is in UK cinemas from 5 December.\\n&quot;&quot;&quot;\\n\\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">undeniable gangsta lean</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
